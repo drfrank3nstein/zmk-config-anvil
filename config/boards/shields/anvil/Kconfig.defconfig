@@ -1,0 +1,6 @@
+if SHIELD_ANVIL
+
+config ZMK_KEYBOARD_NAME
+    default "Anvil"
+
+endif
