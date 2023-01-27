@@ -50,7 +50,7 @@
                 &kp GRAVE  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans    &trans     &trans   &trans     &kp NUBS
                 &kp ESC    &kp Q   &kp D   &kp R   &kp W      &kp B      &trans  &trans  &trans  &kp J      &kp F     &kp U      &kp P    &kp SEMI   &kp MINUS
                 &kp TAB    &kp A   &kp S   &kp H   &kp T      &kp G      &trans  &trans  &trans  &kp D      &kp H     &kp T      &kp N    &kp S      &kp APOS
-                &MO M_W    &kp Z   &kp X   &kp M   &kp C      &kp V      &trans  &trans  &trans  &kp K      &kp L     &kp COMMA  &kp DOT  &kp SLASH  &trans
+                &mo M_W    &kp Z   &kp X   &kp M   &kp C      &kp V      &trans  &trans  &trans  &kp K      &kp L     &kp COMMA  &kp DOT  &kp SLASH  &trans
                 &trans     &trans  &trans  &trans  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &kp SPACE  &kp RALT  &trans     &trans   &trans     &to M_W
             >;
         };
