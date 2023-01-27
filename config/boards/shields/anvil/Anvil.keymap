@@ -5,7 +5,7 @@
 #define DEFAULT 0
 #define DVO 1
 #define QWE 2
-#define WOR 3
+#define WMA 3
 #define M_D 4
 #define M_Q 5
 #define M_W 6
@@ -15,13 +15,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT {
             bindings = <
                 &none     &kp N1    &kp N2     &kp N3      &kp N4  &kp N5  &kp LG(LC(LEFT))  &bt BT_SEL 0  &kp LG(LC(RIGHT)) &kp N6  &kp N7  &kp N8   &kp N9    &kp N0  &none
                 &none     &none     &none      &none       &none   &none   &kp LA(LS(TAB))   &bt BT_SEL 1  &kp LA(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &kp LC(LS(TAB))   &bt BT_SEL 2  &kp LC(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &none             &none         &none             &none   &none   &none    &none     &none   &kp ENTER
-                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog DVO          &tog QWE      &tog WOR          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
+                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog DVO          &tog QWE      &tog WMA          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
             >;
         };
 
@@ -45,7 +45,7 @@
             >;
         };
 
-        WOR {
+        WMA {
             bindings = <
                 &kp GRAVE  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans    &trans     &trans   &trans     &kc NUBS
                 &kp ESC    &kp Q   &kp D   &kp R   &kp W      &kp B      &trans  &trans  &trans  &kp J      &kp F     &kp U      &kp P    &kp SEMI   &kp MINUS
@@ -89,7 +89,7 @@
             bindings = <
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none  &none  &tog DVO  &tog QWE  &tog WOR  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none  &none  &tog DVO  &tog QWE  &tog WMA  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
