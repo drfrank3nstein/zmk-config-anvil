@@ -33,7 +33,7 @@
                 &MO M_D    &kp SEMI  &kp Q      &kp J    &kp K     &kp X      &trans  &trans  &trans  &kp B       &kp M      &kp W      &kp V   &kp Z   &trans
                 &trans     &trans    &trans     &trans   &kp RALT  &kp SPACE  &trans  &trans  &trans  &kp LSHFT   &kp LCTRL  &trans     &trans  &trans  &to M_D
             >;
-        }
+        };
 
         qwerty {
             bindings = <
