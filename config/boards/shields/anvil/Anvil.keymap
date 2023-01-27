@@ -5,7 +5,6 @@
 #define DEFAULT 0
 #define DVO 1
 #define QWE 2
-#define WMA 3
 #define M_D 4
 #define M_Q 5
 #define M_W 6
@@ -21,7 +20,7 @@
                 &none     &none     &none      &none       &none   &none   &kp LA(LS(TAB))   &bt BT_SEL 1  &kp LA(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &kp LC(LS(TAB))   &bt BT_SEL 2  &kp LC(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &none             &none         &none             &none   &none   &none    &none     &none   &kp ENTER
-                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog DVO          &tog QWE      &tog WMA          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
+                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog DVO          &tog QWE      &tog 3          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
             >;
         };
 
@@ -45,7 +44,7 @@
             >;
         };
 
-        WMA {
+        3 {
             bindings = <
                 &kp GRAVE  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans    &trans     &trans   &trans     &kc NUBS
                 &kp ESC    &kp Q   &kp D   &kp R   &kp W      &kp B      &trans  &trans  &trans  &kp J      &kp F     &kp U      &kp P    &kp SEMI   &kp MINUS
@@ -89,7 +88,7 @@
             bindings = <
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none  &none  &tog DVO  &tog QWE  &tog WMA  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none  &none  &tog DVO  &tog QWE  &tog 3  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
