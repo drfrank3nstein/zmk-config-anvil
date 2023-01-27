@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define DVO 1
 #define QWE 2
 #define M_D 4
 #define M_Q 5
@@ -20,11 +19,11 @@
                 &none     &none     &none      &none       &none   &none   &kp LA(LS(TAB))   &bt BT_SEL 1  &kp LA(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &kp LC(LS(TAB))   &bt BT_SEL 2  &kp LC(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none       &none   &none   &none             &none         &none             &none   &none   &none    &none     &none   &kp ENTER
-                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog DVO          &tog QWE      &tog 3          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
+                &kp LGUI  &kp LEFT  &kp RIGHT  &kp K_BSPC  &none   &none   &tog 1          &tog QWE      &tog 3          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
             >;
         };
 
-        DVO {
+        dvorak {
             bindings = <
                 &kp GRAVE  &trans    &trans     &trans   &trans    &trans     &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &kc NUBS
                 &kp ESC    &kp APOS  &kp COMMA  &kp DOT  &kp P     &kp Y      &trans  &trans  &trans  &kp F       &kp G      &kp C      &kp R   &kp L   &kp SLASH
@@ -34,7 +33,7 @@
             >;
         }
 
-        QWE {
+        qwerty {
             bindings = <
                 &kp ESC    &trans    &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &kc NUBS
                 &kp TAB    &kp Q     &kp W   &kp E   &kp R      &kp T      &trans  &trans  &trans  &kp Y      &kp U      &kp I   &kp O   &kp P   &kp EQUAL
@@ -44,7 +43,7 @@
             >;
         };
 
-        3 {
+        workman {
             bindings = <
                 &kp GRAVE  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans    &trans     &trans   &trans     &kc NUBS
                 &kp ESC    &kp Q   &kp D   &kp R   &kp W      &kp B      &trans  &trans  &trans  &kp J      &kp F     &kp U      &kp P    &kp SEMI   &kp MINUS
@@ -54,7 +53,7 @@
             >;
         };
 
-        M_D {
+        mod_dvorak {
             bindings = <
                 &kp F12   &kp F1      &kp F2      &kp F3    &kp F4      &kp F5     &trans  &trans  &trans  &kp F6     &kp F7     &kp F8  &kp F9      &kp F10       &kp F11
                 &trans    &kp PG_UP   &kp HOME    &kp UP    &kp END     &kp PSCRN  &trans  &trans  &trans  &kp NUBS   &kp N7     &kp N8  &kp N9      &kp MINUS     &kp SLASH
@@ -64,7 +63,7 @@
             >;
         };
 
-        M_Q {
+        mod_qwerty {
             bindings = <
                 &kp F12   &kp F1      &kp F2      &kp F3    &kp F4      &kp F5     &trans  &trans  &trans  &kp F6     &kp F7     &kp F8  &kp F9      &kp F10       &kp F11
                 &trans    &kp PG_UP   &kp HOME    &kp UP    &kp END     &kp PSCRN  &trans  &trans  &trans  &kp NUBS   &kp N7     &kp N8  &kp N9      &kp MINUS     &kp SLASH
@@ -74,7 +73,7 @@
             >;
         };
 
-        M_W {
+        mod_workman {
             bindings = <
                 &kp F12   &kp F1      &kp F2      &kp F3    &kp F4      &kp F5     &trans  &trans  &trans  &kp F6     &kp F7     &kp F8  &kp F9      &kp F10       &kp F11
                 &trans    &kp PG_UP   &kp HOME    &kp UP    &kp END     &kp PSCRN  &trans  &trans  &trans  &kp NUBS   &kp N7     &kp N8  &kp N9      &kp MINUS     &kp SLASH
@@ -84,11 +83,11 @@
             >;
         };
 
-        LAY {
+        legacy_layout {
             bindings = <
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none  &none  &tog DVO  &tog QWE  &tog 3  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none  &none  &tog 1  &tog QWE  &tog 3  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none     &none     &none     &none   &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
