@@ -19,7 +19,7 @@
         default {
             bindings = <
                 &none     &kp N1    &kp N2     &kp N3    &kp N4  &kp N5  &kp LG(LC(LEFT))  &bt BT_SEL 0  &kp LG(LC(RIGHT)) &kp N6  &kp N7  &kp N8   &kp N9    &kp N0  &none
-                &none     &none     &none      &none     &none   &none   &kp LA(LS(TAB))   &bt BT_SEL 1  &kp LA(TAB)       &none   &none   &none    &none     &none   &none
+                &none     &none     &none      &none     &none   &none   &kp LA(LS(ESC))   &bt BT_SEL 1  &kp LA(ESC)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none     &none   &none   &kp LC(LS(TAB))   &bt BT_SEL 2  &kp LC(TAB)       &none   &none   &none    &none     &none   &none
                 &none     &none     &none      &none     &none   &none   &out OUT_USB      &bt BT_CLR    &out OUT_BLE      &none   &none   &none    &none     &none   &kp ENTER
                 &kp LGUI  &kp LEFT  &kp RIGHT  &kp BSPC  &none   &none   &to  DVO          &to  QWE      &to  WOR          &none   &none   &kp DEL  &kp DOWN  &kp UP  &none
@@ -28,11 +28,11 @@
 
         dvorak {
             bindings = <
-                &kp GRAVE  &trans    &trans     &trans   &trans    &trans     &trans  &kp N1  &trans  &trans      &trans     &trans     &trans  &trans  &kp NUBS
-                &kp ESC    &kp APOS  &kp COMMA  &kp DOT  &kp P     &kp Y      &trans  &kp N2  &trans  &kp F       &kp G      &kp C      &kp R   &kp L   &kp SLASH
-                &kp TAB    &kp A     &kp O      &kp E    &kp U     &kp I      &trans  &kp N3  &trans  &kp D       &kp H      &kp T      &kp N   &kp S   &kp MINUS
-                &mo M_D    &kp SEMI  &kp Q      &kp J    &kp K     &kp X      &trans  &kp N4  &trans  &kp B       &kp M      &kp W      &kp V   &kp Z   &trans
-                &trans     &trans    &trans     &trans   &kp RALT  &kp SPACE  &trans  &kp N5  &trans  &kp LSHFT   &kp LCTRL  &trans     &trans  &trans  &tog M_D
+                &kp GRAVE  &trans    &trans     &trans   &trans    &trans     &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &kp NUBS
+                &kp ESC    &kp APOS  &kp COMMA  &kp DOT  &kp P     &kp Y      &trans  &trans  &trans  &kp F       &kp G      &kp C      &kp R   &kp L   &kp SLASH
+                &kp TAB    &kp A     &kp O      &kp E    &kp U     &kp I      &trans  &trans  &trans  &kp D       &kp H      &kp T      &kp N   &kp S   &kp MINUS
+                &mo M_D    &kp SEMI  &kp Q      &kp J    &kp K     &kp X      &trans  &trans  &trans  &kp B       &kp M      &kp W      &kp V   &kp Z   &trans
+                &trans     &trans    &trans     &trans   &kp RALT  &kp SPACE  &trans  &trans  &trans  &kp LSHFT   &kp LCTRL  &trans     &trans  &trans  &tog M_D
             >;
         };
 
