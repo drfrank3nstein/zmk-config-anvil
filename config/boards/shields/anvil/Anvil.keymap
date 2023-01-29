@@ -37,11 +37,11 @@
 
         qwerty {
             bindings = <
-                &kp ESC    &trans    &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &kp NUBS
-                &kp TAB    &kp Q     &kp W   &kp E   &kp R      &kp T      &trans  &trans  &trans  &kp Y      &kp U      &kp I   &kp O   &kp P   &kp EQUAL
-                &kp CAPS   &kp Q     &kp W   &kp E   &kp U      &kp I      &trans  &trans  &trans  &kp D      &kp H      &kp T   &kp N   &kp S   &kp MINUS
-                &kp LSHFT  &kp SEMI  &kp Q   &kp J   &kp K      &kp X      &trans  &trans  &trans  &kp B      &kp M      &kp W   &kp V   &kp Z   &trans
-                &trans     &trans    &trans  &trans  &mo M_Q    &kp SPACE  &trans  &trans  &trans  &kp SPACE  &mo M_Q    &trans  &trans  &trans  &tog M_Q
+                &kp ESC    &trans  &trans  &trans  &trans   &trans     &trans  &trans  &trans  &trans     &trans   &trans     &trans   &trans     &kp MINUS
+                &kp TAB    &kp Q   &kp W   &kp E   &kp R    &kp T      &trans  &trans  &trans  &kp Y      &kp U    &kp I      &kp O    &kp P      &kp EQUAL
+                &kp CAPS   &kp A   &kp S   &kp D   &kp F    &kp G      &trans  &trans  &trans  &kp H      &kp J    &kp K      &kp L    &kp SEMI   &kp APOS
+                &kp LSHFT  &kp Z   &kp X   &kp C   &kp V    &kp B      &trans  &trans  &trans  &kp N      &kp M    &kp COMMA  &kp DOT  &kp SLASH  &trans
+                &trans     &trans  &trans  &trans  &mo M_Q  &kp SPACE  &trans  &trans  &trans  &kp SPACE  &mo M_Q  &trans     &trans   &trans     &tog M_Q
             >;
         };
 
